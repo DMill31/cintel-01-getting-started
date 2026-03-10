@@ -2,11 +2,12 @@
 pipeline_miller.py - Project script (modified).
 
 Author: Daniel Miller
-Date: 2026-03-010
+Date: 2026-03-10
 
 Purpose:
   Confirm your project environment is set up correctly.
   Run this script to see a log message in the terminal.
+  Updated to have exception handling.
 
 Run as a Module:
   uv run python -m cintel.pipeline_miller
@@ -39,19 +40,26 @@ def main() -> None:
     log_header() logs a standard run header.
     log_path() logs repo-relative paths (privacy-safe).
     """
-    log_header(LOG, "CINTEL")
+    try:
+        log_header(LOG, "CINTEL")
 
-    LOG.info("========================")
-    LOG.info("START main()")
-    LOG.info("========================")
+        LOG.info("========================")
+        LOG.info("START main()")
+        LOG.info("========================")
 
-    log_path(LOG, "ROOT_DIR", ROOT_DIR)
-    log_path(LOG, "DOCS_DIR", DOCS_DIR)
+        log_path(LOG, "ROOT_DIR", ROOT_DIR)
+        log_path(LOG, "DOCS_DIR", DOCS_DIR)
 
-    LOG.info("========================")
-    LOG.info("Pipeline executed successfully!")
-    LOG.info("========================")
-    LOG.info("END main()")
+        LOG.info("========================")
+        LOG.info("Pipeline executed successfully!")
+        LOG.info("========================")
+
+    except Exception as e:
+        LOG.exception("Pipeline failed!")
+        LOG.error(f"Error details: {e}")
+
+    finally:
+        LOG.info("END main()")
 
 
 # === CONDITIONAL EXECUTION GUARD ===
