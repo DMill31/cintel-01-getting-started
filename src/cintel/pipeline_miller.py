@@ -31,6 +31,10 @@ LOG: logging.Logger = get_logger("P1", level="DEBUG")
 ROOT_DIR: Path = Path.cwd()
 DOCS_DIR: Path = ROOT_DIR / "docs"
 
+# === DECLARE DEBUG FLAG ===
+
+TEST_ERROR = False  # Set to True to test error handling
+
 # === DEFINE THE MAIN FUNCTION ===
 
 
@@ -50,10 +54,8 @@ def main() -> None:
         log_path(LOG, "ROOT_DIR", ROOT_DIR)
         log_path(LOG, "DOCS_DIR", DOCS_DIR)
 
-        """
-        Uncomment this code if for testing error handling:
-        raise ValueError("This is a test exception to demonstrate error handling.")
-        """
+        if TEST_ERROR:
+            raise ValueError("This is a test error to demonstrate exception handling.")
 
         LOG.info("========================")
         LOG.info("Pipeline executed successfully!")

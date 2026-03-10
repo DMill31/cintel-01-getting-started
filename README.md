@@ -111,6 +111,15 @@ git push -u origin main
 
 </details>
 
+## My Modification
+
+A new file, pipeline_miller.py was created as a copy of the original pipeline_case.py
+
+In this new version, exception handling was added so that the 'END main()' still runs regardless of there being an error.
+To test this, there is a forced error as a boolean that can be set to 'True' to toggle error testing.
+This was added to ensure that failures are logged clearly.
+
+Now when there is an error, the exception details are given before the main() function finishes running, which was observed during testing.
 ## Notes
 
 - Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
