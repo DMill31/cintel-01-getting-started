@@ -56,7 +56,7 @@ def main() -> None:
 
     except Exception as e:
         LOG.exception("Pipeline failed!")
-        LOG.error(f"Error details: {e}")
+        LOG.exception(f"Exception details: {e}")
 
     finally:
         LOG.info("END main()")
