@@ -50,6 +50,11 @@ def main() -> None:
         log_path(LOG, "ROOT_DIR", ROOT_DIR)
         log_path(LOG, "DOCS_DIR", DOCS_DIR)
 
+        """
+        Uncomment this code if for testing error handling:
+        raise ValueError("This is a test exception to demonstrate error handling.")
+        """
+
         LOG.info("========================")
         LOG.info("Pipeline executed successfully!")
         LOG.info("========================")

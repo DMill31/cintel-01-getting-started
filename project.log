@@ -49,3 +49,44 @@
 2026-03-10 10:54:35 | INFO | P1 | Pipeline executed successfully!
 2026-03-10 10:54:35 | INFO | P1 | ========================
 2026-03-10 10:54:35 | INFO | P1 | END main()
+2026-03-10 10:57:25 | INFO | P1 | === RUN START ===
+2026-03-10 10:57:25 | INFO | P1 | project=CINTEL
+2026-03-10 10:57:25 | INFO | P1 | repo_dir=cintel-01-getting-started
+2026-03-10 10:57:25 | INFO | P1 | python=3.14.3
+2026-03-10 10:57:25 | INFO | P1 | os=Windows 11
+2026-03-10 10:57:25 | INFO | P1 | shell=powershell
+2026-03-10 10:57:25 | INFO | P1 | cwd=.
+2026-03-10 10:57:25 | INFO | P1 | github_actions=False
+2026-03-10 10:57:25 | INFO | P1 | ========================
+2026-03-10 10:57:25 | INFO | P1 | START main()
+2026-03-10 10:57:25 | INFO | P1 | ========================
+2026-03-10 10:57:25 | INFO | P1 | ROOT_DIR = .
+2026-03-10 10:57:25 | INFO | P1 | DOCS_DIR = docs
+2026-03-10 10:57:25 | ERROR | P1 | Pipeline failed!
+Traceback (most recent call last):
+  File "c:\Repos\cintel-01-getting-started\src\cintel\pipeline_miller.py", line 53, in main
+    raise ValueError("This is a test exception to demonstrate error handling.")
+ValueError: This is a test exception to demonstrate error handling.
+2026-03-10 10:57:25 | ERROR | P1 | Exception details: This is a test exception to demonstrate error handling.
+Traceback (most recent call last):
+  File "c:\Repos\cintel-01-getting-started\src\cintel\pipeline_miller.py", line 53, in main
+    raise ValueError("This is a test exception to demonstrate error handling.")
+ValueError: This is a test exception to demonstrate error handling.
+2026-03-10 10:57:25 | INFO | P1 | END main()
+2026-03-10 10:58:26 | INFO | P1 | === RUN START ===
+2026-03-10 10:58:26 | INFO | P1 | project=CINTEL
+2026-03-10 10:58:26 | INFO | P1 | repo_dir=cintel-01-getting-started
+2026-03-10 10:58:26 | INFO | P1 | python=3.14.3
+2026-03-10 10:58:26 | INFO | P1 | os=Windows 11
+2026-03-10 10:58:26 | INFO | P1 | shell=powershell
+2026-03-10 10:58:26 | INFO | P1 | cwd=.
+2026-03-10 10:58:26 | INFO | P1 | github_actions=False
+2026-03-10 10:58:26 | INFO | P1 | ========================
+2026-03-10 10:58:26 | INFO | P1 | START main()
+2026-03-10 10:58:26 | INFO | P1 | ========================
+2026-03-10 10:58:26 | INFO | P1 | ROOT_DIR = .
+2026-03-10 10:58:26 | INFO | P1 | DOCS_DIR = docs
+2026-03-10 10:58:26 | INFO | P1 | ========================
+2026-03-10 10:58:26 | INFO | P1 | Pipeline executed successfully!
+2026-03-10 10:58:26 | INFO | P1 | ========================
+2026-03-10 10:58:26 | INFO | P1 | END main()
